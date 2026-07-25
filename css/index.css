@@ -39,15 +39,15 @@ Tiempo de duración de los banners
 */
     /*inicio*/
     0%,05%{
-        background-image: url("imagenes/Mn.jpg");
+        background-image: url("../imagenes/Mn.jpg");
     }
 
     31%,50%{
-        background-image: url("imagenes/fox.jpeg");
+        background-image: url("../imagenes/fox.jpeg");
     }
 
     50%,80%{
-        background-image: url("imagenes/erizo.jpeg"); 
+        background-image: url("../imagenes/erizo.jpeg"); 
     }
 }
 
@@ -94,7 +94,7 @@ Tiempo de duración de los banners
 
 /*NAVEGACION DE LA BARRA DEL MENU*/
 .navegacion-barra{
-    margin-top: -100px;
+    margin-top: 0;
 }
 .navegacion-barra ul {
     display: flex;
