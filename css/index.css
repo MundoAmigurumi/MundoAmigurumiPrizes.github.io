@@ -15,7 +15,8 @@ body {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;}
+    padding: 0 20px;
+}
 
 .banner{
     min-height: 770px;                 
@@ -51,13 +52,6 @@ Tiempo de duración de los banners
     }
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Separar los elementos, colocando uno al inicio y otro al final del contenedor.*/
-    padding: 15px 0;}
-
-
 .logo {
     width: 160px;
     height: auto;}
@@ -74,7 +68,7 @@ Tiempo de duración de los banners
  /*use margin y margin-top para subirlo un poco, estaba muy abajo*/   
 .titulo-principal {
     margin: 0;
-    margin-top: -140px;
+    margin-top: -18px;
     color: white;
     font-size: 80px ;
     text-transform: uppercase;
@@ -86,41 +80,6 @@ Tiempo de duración de los banners
 .titulo-secundario {
     font-size: 15px;
     color: rgb(216, 127, 161);}
-
-    
-
-
-
-
-/*NAVEGACION DE LA BARRA DEL MENU*/
-.navegacion-barra{
-    margin-top: 0;
-}
-.navegacion-barra ul {
-    display: flex;
-    gap: 20px;}
-
-    
-.navegacion-barra ul li a {
-    font-size: 22px ;
-    color: rgb(139, 11, 43);
-    font-weight: 600;
-    padding: 10px 15px;}
-
-/* Estilo para cuando pase el mouse*/
-.navegacion-barra ul li a:hover {
-  color: goldenrod;}
-
-
-
-
-
-
-
-.menu-icono {width: 25px;
-  display: none;
-  cursor: pointer;}
-  
 
 .pie-pagina {
     padding:20px;
