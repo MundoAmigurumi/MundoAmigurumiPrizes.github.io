@@ -109,6 +109,8 @@ function crearMenu() {
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="quienesSomos.html">Quienes somos</a></li>
                     <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="iniciosesion.html">Iniciar sesión</a></li>
+                    <li><a href="contactanos.html" target="_blank">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -159,3 +161,21 @@ document.addEventListener("DOMContentLoaded", () => {
     agregarEstilosMenu();
     crearMenu();
 });
+
+function verClave(idClave, idIcono) {
+
+    let clave = document.getElementById(idClave);
+    let icono = document.getElementById(idIcono);
+
+    if (clave.type === "password") {
+
+        clave.type = "text";
+        icono.src = "imagenes/ojo-abierto.png";
+
+    } else {
+
+        clave.type = "password";
+        icono.src = "imagenes/ojo-cerrado.png";
+
+    }
+}
