@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <h1>DATOS DE LA CUENTA</h1>
+    <h2>Completa la información necesaria para la creación de tu cuenta.</h2>
+    <form action="iniciosesion.html">
+
+        <label for="nombre"><img src="imagenes/usuario.png" class="imagen-usuario" width="70">
+        </label>
+        <label for="nombre">Usuario</label>
+        <input type="text" name="nombre" id="nombre" size="50" required autofocus>
+
+    <p>
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" name="correo" id="correo" required placeholder="ejemplo@gmail.com">
+    </p>
+
+
+    <p>
+        <label for="clave">Contraseña:</label>
+        <input type="password" name="clave" id="clave" pattern="[A-Za-z]{4}[0-9]{2}" required placeholder="4 letras y 2 números">
+
+
+        <input type="checkbox" id="mostrarClave" onclick="verClave('clave', 'iconoClave')">
+        
+
+
+        <label for="mostrarClave"><img src="imagenes/ojo-cerrado.png"id="iconoClave"width="20">
+        </label>
+
+    </p>
+
+
+
+    <p>
+        <label for="confirmarclave">Confirmar contraseña:</label>
+        <input type="password" name="confirmarclave" id="confirmarclave"  pattern="[A-Za-z]{4}[0-9]{2}" required>
+
+
+        <input type="checkbox" id="mostrarConfirmar" onclick="verClave('confirmarclave', 'iconoConfirmar')">
+        
+
+        <label for="mostrarConfirmar"><img src="imagenes/ojo-cerrado.png"id="iconoConfirmar"width="20">
+        </label>
+    </p>
+
+    <p>
+        <label for="Edad">Edad:</label>
+        <input type="number" min="18" max="80" name="edad"  required>
+    </p>
+
+    <br> 
+
+    <p>
+        <label for="genero">Género:</label>
+
+        <input type="radio" name="genero" id="hombre" value="hombre" required>
+        <label for="hombre">Hombre</label>
+
+        <input type="radio" name="genero" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label>
+    </p>
+
+
+<div class="terminos">
+    <h3>Términos y condiciones</h3>
+
+    <ul>
+        <li>El usuario debe proporcionar información verdadera y actualizada al momento de registrarse.</li>
+        <br>
+        <li>El usuario es responsable de mantener segura su cuenta y contraseña.</li>
+        <br>
+        <li>La cuenta creada es personal y no debe ser utilizada por otras personas.</li>
+        <br>
+        <li>Los productos publicados en nuestra página están sujetos a disponibilidad.</li>
+        <br>
+        <li>Los precios de los productos pueden cambiar sin previo aviso.</li>
+        <br>
+        <li>Las imágenes de los amigurumis son referenciales y pueden existir pequeñas diferencias en los productos hechos a mano.</li>
+        <br>
+        <li>El usuario debe revisar correctamente su información antes de realizar una compra.</li>
+        <br>
+        <li>Los datos proporcionados serán utilizados para gestionar la cuenta y procesar las compras realizadas.</li>
+        <br>
+        <li>El usuario se compromete a utilizar la página de manera responsable y respetuosa.</li>
+        <br>
+        <li>La página se reserva el derecho de actualizar estos términos y condiciones cuando sea necesario.</li>
+        <br>
+        <li>Al crear una cuenta, el usuario declara haber leído y aceptado estos términos y condiciones.</li>
+    </ul>
+</div>
+
+    <p>
+        <input type="checkbox" name="aceptar" id="acepto" required>
+        <label for="aceptar">Acepto las condiciones de uso</label>
+    </p>
+
+    
+
+    <p>
+       <input type="submit" value="Crear Cuenta">
+    </p>
+
+
+<p>
+    ¿Ya tienes una cuenta?
+    <a href="iniciosesion.html">Inicia sesión</a>
+</p>
+
+    </form>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

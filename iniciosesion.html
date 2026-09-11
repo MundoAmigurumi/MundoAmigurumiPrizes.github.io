@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Mundo Amigurumi</title>
+
+    <!-- Uso de Font Awesome para los íconos del formulario -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="css/iniciosesion.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="banner">
+        <div id="menu-container"></div>
+
+        <div class="espacio-central-banner">
+        </div>
+    </div>
+
+    <div class="contenido">
+
+        <div class="formulario">
+
+            <h1>INICIAR SESIÓN</h1>
+
+            <i class="fa-regular fa-circle-user"></i>
+
+            <form action="galeria.html" method="get">
+
+                <label for="correo">
+                    <i class="fa-solid fa-envelope"></i>
+                    Correo electrónico
+                </label>
+
+                <input type="email" id="correo" name="correo"
+                       placeholder="Ingrese su correo" required>
+
+
+                <label for="contrasena">
+                    <i class="fa-solid fa-lock"></i>
+                    Contraseña
+                </label>
+
+                <input type="password" id="contrasena" name="contrasena"
+                       placeholder="Ingrese su contraseña"
+                       minlength="6" required>
+
+
+                <button type="submit">Iniciar sesión</button>
+
+                <p>
+                    ¿No tienes una cuenta?
+                    <a href="registro.html" target="_blank">Regístrate aquí</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <p>
+            <strong>
+                Visítanos en nuestras redes<br>
+                Ubícanos en Lima, Perú - 2026
+            </strong>
+        </p>
+        <div style="text-align: right;">
+
+            <!-- TIKTOK -->
+            <a href="https://www.tiktok.com/@mundoamigurumi.pr" target="_blank">
+                <img src="imagenes/tiktok.png" alt="TikTok">
+            </a>
+
+            <!-- YOUTUBE -->
+            <a href="https://youtube.com/@mundoamigurumiprize?si=BIQtwBn82fOL_5YF" target="_blank">
+                <img src="imagenes/youtube.png" alt="YouTube">
+            </a>
+
+            <!-- FACEBOOK -->
+            <a href=    "https://www.facebook.com/profile.php?id=61592068635715" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook">
+            </a>
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/955217400" target="_blank">
+                <img src="imagenes/Whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
