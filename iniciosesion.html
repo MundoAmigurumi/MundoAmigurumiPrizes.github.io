@@ -26,7 +26,7 @@
 
             <i class="fa-regular fa-circle-user"></i>
 
-            <form action="galeria.html" method="get">
+            <form onsubmit="iniciarSesion(); return false;">
 
                 <label for="correo">
                     <i class="fa-solid fa-envelope"></i>
@@ -43,8 +43,7 @@
                 </label>
 
                 <input type="password" id="contrasena" name="contrasena"
-                       placeholder="Ingrese su contraseña"
-                       minlength="6" required>
+                       minlength="6" required placeholder=" Ingrese Contraseña: 4 letras y 2 números">
 
 
                 <button type="submit">Iniciar sesión</button>
@@ -89,5 +88,6 @@
         </div>
     </div>
     <script src="./js/menu.js"></script>
+    <script src="./js/iniciosesion.js"></script>
 </body>
 </html>
