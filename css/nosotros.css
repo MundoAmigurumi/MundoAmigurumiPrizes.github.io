@@ -49,18 +49,20 @@ gap: 30px;
 margin-bottom: 40px; } 
 
 .foto1 img, 
-.foto2 img { 
+.foto2 img,
+.foto3 img {
 width: 300px; 
 height: 250px; 
+overflow: hidden;
 object-fit: cover; /* Que la imagen llene todo sin deformarse*/ 
 border-radius: 6px; } /* Para redondear bordes*/ 
 
-
 .texto1, 
-.texto2 { 
+.texto2,
+.texto3 { 
 flex: 1; 
 font-size: 16px; 
-line-height: 1.6;} 
+line-height: 1.6;}
 
 h1{ 
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
